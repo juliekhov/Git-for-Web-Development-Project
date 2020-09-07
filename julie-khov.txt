@@ -1,0 +1,238 @@
+https://codepen.io/doubleagentblue/collab/LYNOLBe
+
+<!-- Questions to Submit in today's file first-lastname.txt -->
+<!--
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+         A: Semantic HTML is markup language used for displaying data in graphical form on a web page that gives the meaning of the text to the browser and the developer.
+    2. What is HTML used for? 
+A:HTML is used for identifying    important parts of the page such as layout or headers or paragraphs, etc.
+    3. What is an attribute and where do we put it? 
+A: An attribute is used inside an html tag and provides additional information about an element, usually in a name="value" format.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+A: The h1 tag represents a preformatted heading with the largest heading size.
+It also tells browsers the most important information about that page and reports it to search engines. You can only use one h1 tag for SEO.
+    5. Name two tags that have required attributes
+A: ex. <img src="" alt="">
+Images require a source and alternate text attribute.
+ex. <a href=""> sample </a>
+Hyperlinks requires a hypertext reference with a hyperlink and ending anchor tag.
+    6. What do we put in the head of our HTML document? 
+A: We put information, links, google fonts, styles, scripts, etc.
+    7. What is an id? 
+A: An id is a unique selector acting much like a social security number or driver's license, unique to a specific element, unlike classes. id selectors are usually referenced with a hash symbol.
+    8. What elements can I add an id to? 
+A: You can add unique id(s) to divs, paragraphs, any element, but only occuring once since it's unique.
+
+    9. How many times can I use the same id on a page? 
+A: Once.
+    10. What is a class? 
+A: A class is also a selector except it can be used as many times as possible on a page to manipulate the look and layout of many elements on the page.
+    11. What elements can I add a class to? 
+A: You can add classes to any element.
+    12. How many times can I use the same class on a page? 
+A: You can use it as many times as needed.
+    13. How do I get my link to open in a new tab?
+A: target="_blank" is used to open a link in a new window
+    14. What is the alt attribute in the image tag used for? 
+The alt attribute is used for screen-readers or impaired individuals.
+    15. How do I reference an id?
+A: You type id="idname" in the open tag.
+    16. What is the difference between a section and a div
+A: The difference between a section and a div is that a section may be an important part of a document specified as semantic html and adds meaning to a paged and is grouped whereas <div>, on the other hand, does not convey any meaning, aside from any found in its class , lang and title attributes.
+    17. What is CSS used for? 
+A: CSS is used for adding transitons or visual design. CSS Grid and CSS Flexbox are also used for manipulating columns and rows of items on a page.
+    18. How to we select an element? Example - every h2 on the page
+A: We an select every h2 element on the page:
+
+h2 {
+
+}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+A: The difference between a class and an id is that a classs can be used more than once while an id cannot. e.g. use a p class to change all the paragraphs, use an id to establish id="nav-links" to change all the nav-links blue.
+    20. How do we select classes in CSS?
+A: You create a class with a dot and the class name.
+example:
+.nav-link{
+
+}
+    21. How do we select a p element with a single class of “human””?
+A: In the css file use class selector notation .human with curly braces:
+
+Ex.
+
+<html>
+<head>
+<style>
+.human{
+    
+}
+</style>
+</head>
+<body>
+<p class="human"></p>
+</body>
+</html>
+
+    22. What is a parent child selector? When would this be useful?
+ A: A parent child selector creates inheritance meaning that element will inherit the changes made on the parent element. For example, whatever is nested inside a parent element will also receive those same selector effects / changes. However, some css effects will change and others do not.
+A html selector or body selector can act as parent elements on the page and then its child elements may inherit those properties.
+    23. How do you select all links within a div with the class of sidebar?
+A: You can select all the links within a div with the class of sidebar with anchor tag:
+.sidebar a{
+
+}
+    24. What is a pseudo selector?
+A psuedo-class selector is a conditional selector ex. on hover and includes a colon to show this usage.
+On the condition that the mouse is over this element, hover and use these values.
+.gallery img:hover{
+...
+}
+    25. What do we use to change the spacing between the lines?
+A: You can change the spacing between the lines by using the line-height property in CSS.
+
+Ex.
+
+.first-section {
+  line-height:120%;  (OR line-height:1.6;)
+}
+
+
+    26. What do we use to change the spacing between letters?
+A: You can use the letter-spacing property in the CSS.
+
+Ex.
+
+.third-section {
+  letter-spacing:2px;
+}
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+A: We can use text-transform property.
+ex.
+text-transform: capitalize;
+text-transform: lowercase;
+    28. How do I add a 1px border around my div that is dotted and black?
+A: in css stylesheet:
+div {
+border:1px dotted black;
+}
+    29. How do I select everything on the page?
+A: The * selector can select everything on the page.
+    30. How do I write a comment in CSS?
+A: CSS uses the same block-like comments used in C-languages, /* , and end it with */ .
+    31. How do I find out what file I am in, when I am using the command line? 
+A: Use bash/terminal and type pwd (present working directory) or git status
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+A: use ls to list the current folder
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+A: You can remove a file via the command line by rm filename.
+rm <file>
+This can permanently remove a file from your directory.
+    34. Why should I use version control? 
+A: You should use version control because it backs up your changes on the virual repository to display your code. You can also submit pull requests where they can be approved by collaborators.
+    35. How often should I commit to github?
+A: Everyday.
+    36. What is the command we would use to push our repo up to github? 
+We can use git push (to push your changes up to the remote branch).
+    37. Walk me through Lambda's git flow. 
+A: Fork a lambda repository.
+  Add TL as collaborator.
+  Right Click on Git Bash in your Week Module folder.
+  Type git clone url.
+  Save and make changes to file.
+  Type git push url
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+A: The difference between an inline element and a block element is that
+inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are <span> , <strong>, and <img> tags. When it comes to margins and padding, browsers treat inline elements differently.
+    2. What happens when an element is positioned absolutely? 
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+You can use the box model and manipulate the width.
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default.
+Examples of block-level elements:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+Examples of inline elements:
+
+<span>
+<a>
+<img>
+
+Examples of inline-block elements:
+<button>
+<input>
+<select>
+<textarea>
+
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+A: The box-model relies on the margins and padding to set the width of the content.
+ 
+
+
+                                            ** STRETCH **
+
+
+
+ While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
+
+ Research and understand what a merge conflict is and how to resolve it.
+A: Receive Git Bash Error:
+
+error: Entry '<fileName>' not uptodate. Cannot merge. (Changes in working directory)
+Git fails during the merge
+A failure DURING a merge indicates a conflict between the current local branch and the branch being merged. This indicates a conflict with another developers code.
+
+Resolve merge conflict:
+
+Use git status (checks current directory)
+The output from git status indicates that there are unmerged paths due to a conflict. The merge.text file now appears in a modified state. We can examine the modifications. The most direct way to resolve a merge conflict is to edit the conflicted file. 
+
+then use:
+
+use git add <filename>
+git commit -m "merged and resolved the conflict in filename.extension"
+git log (produce a log with a list of commits that conflict between the merging branches)
+git diff (helps find differences between states of a repository/files)
+
+
+ Research the Git commands pull, rebase, merge. These commands will allow you to bring in changes that other developers push to the main branch.
+
+pull (you can use the git pull command to automatically fetch and then merge that
+remote branch into your current branch)
+rebase (With the rebase command, you can take all the changes that were committed on one branch and replay them on a different branch)
+merge (merge two branches together, combines files together)
+
+In Git, there are two main ways to integrate changes from one branch into another: merge and the rebase. 
+
+ Research the Git commands reset , revert, clean. These commands will allow you to go back and amends previous commits you have made.
+
+The first thing reset will do is move what HEAD points to. This isn’t the same as changing HEAD
+itself (which is what checkout does); reset moves the branch that HEAD is pointing to.
+
+Git gives you the option of
+making a new commit which undoes all the changes from an existing one. Git calls this operation a
+“revert”, and in this particular scenario
+
+ Research and set up a Graphical User Interface (GUI) Git console.
+
+Its an interface that uses color and buttons and graphics to make the git console more pretty and options for commiting repositories.
+You could use SourceTree or Github as GUI interfaces.
+
+ Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push.
+
+
+   -->
